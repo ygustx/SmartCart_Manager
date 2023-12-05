@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".FormCadasProdutos">
+
+    <View
+        android:id="@+id/conteinerComponentes"
+        android:layout_width="322dp"
+        android:layout_height="262dp"
+        android:layout_marginBottom="216dp"
+        android:background="@drawable/conteiner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="161dp"
+        android:layout_height="129dp"
+        app:layout_constraintBottom_toTopOf="@+id/conteinerComponentes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.83"
+        app:srcCompat="@drawable/cadastro" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="236dp"
+        android:layout_height="129dp"
+        android:layout_marginEnd="80dp"
+        android:text="INCLUIR PRODUTO"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/conteinerComponentes"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.459" />
+
+    <EditText
+        android:id="@+id/edit_nome"
+        style="@style/Edit_text"
+        android:layout_width="283dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:drawableRight="@drawable/ic_bag"
+        android:hint="Nome"
+        android:inputType="text"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="@+id/conteinerComponentes"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/conteinerComponentes"
+        app:layout_constraintTop_toTopOf="@+id/conteinerComponentes"
+        tools:layout_editor_absoluteX="64dp" />
+
+    <EditText
+        android:id="@+id/edit_valor"
+        style="@style/Edit_text"
+        android:layout_width="283dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="20dp"
+        android:drawableRight="@drawable/ic_monetizion"
+        android:hint="Valor"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/edit_quantidade"
+        app:layout_constraintEnd_toEndOf="@+id/conteinerComponentes"
+        app:layout_constraintStart_toStartOf="@+id/conteinerComponentes"
+        app:layout_constraintTop_toTopOf="@+id/conteinerComponentes"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/edit_descricao"
+        style="@style/Edit_text"
+        android:layout_width="283dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:layout_marginEnd="19dp"
+        android:drawableRight="@drawable/ic_description"
+        android:hint="Descrição"
+        android:inputType="numberPassword"
+        app:layout_constraintBottom_toTopOf="@+id/edit_valor"
+        app:layout_constraintEnd_toEndOf="@+id/conteinerComponentes"
+        app:layout_constraintStart_toStartOf="@+id/conteinerComponentes"
+        app:layout_constraintTop_toBottomOf="@+id/edit_nome" />
+
+    <EditText
+        android:id="@+id/edit_quantidade"
+        style="@style/Edit_text"
+        android:layout_width="283dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="12dp"
+        android:drawableRight="@drawable/ic_quantidade"
+        android:hint="Quantidade"
+        android:inputType="numberPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/conteinerComponentes"
+        app:layout_constraintEnd_toEndOf="@+id/conteinerComponentes"
+        app:layout_constraintStart_toStartOf="@+id/conteinerComponentes" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonincluir"
+        android:layout_width="319dp"
+        android:layout_height="72dp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/button_orange"
+        android:padding="1dp"
+        android:text="Incluir"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_quantidade" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonvoltarestoque"
+        android:layout_width="319dp"
+        android:layout_height="72dp"
+        android:layout_marginHorizontal="60dp"
+        android:background="@drawable/button_orange"
+        android:onClick="cadastrarVoltar"
+        android:padding="1dp"
+        android:text="VOltar"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonincluir" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

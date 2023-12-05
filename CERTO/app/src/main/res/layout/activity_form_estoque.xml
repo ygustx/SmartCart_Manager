@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".FormEstoque">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="127dp"
+        android:layout_height="92dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttoncadastrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.739"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.611"
+        app:srcCompat="@drawable/caixa" />
+
+    <TextView
+        android:id="@+id/textViewDashEstoque"
+        android:layout_width="243dp"
+        android:layout_height="70dp"
+        android:text="ESTOQUE"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttoncadastrar"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.504" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttoncadastrar"
+        android:layout_width="319dp"
+        android:layout_height="91dp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginBottom="368dp"
+        android:background="@drawable/button"
+        android:onClick="estoqueIncluir"
+        android:padding="1dp"
+        android:text="Incluir produto"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonListar"
+        android:layout_width="319dp"
+        android:layout_height="92dp"
+        android:layout_marginHorizontal="60dp"
+        android:background="@drawable/button"
+        android:padding="1dp"
+        android:text="listar produtos"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonfuncionario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttoncadastrar" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonfuncionario"
+        android:layout_width="319dp"
+        android:layout_height="91dp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/button"
+        android:onClick="estoqueSair"
+        android:padding="1dp"
+        android:text="sair"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

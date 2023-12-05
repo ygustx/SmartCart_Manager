@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".FormFecharCaixa">
+
+    <View
+        android:id="@+id/conteinerComponentes"
+        android:layout_width="324dp"
+        android:layout_height="282dp"
+        android:background="@drawable/conteiner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+        app:layout_constraintVertical_bias="0.502" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="162dp"
+        android:layout_height="139dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.787"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icone_cadenas_orange"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <EditText
+        android:id="@+id/edit_nome"
+        style="@style/Edit_text"
+        android:layout_width="282dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="17dp"
+        android:drawableRight="@drawable/ic_monetizion"
+        android:hint="Saldo Final"
+        android:inputType="number"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/conteinerComponentes"
+        app:layout_constraintStart_toStartOf="@+id/conteinerComponentes"
+        app:layout_constraintTop_toTopOf="@+id/conteinerComponentes" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonentrar"
+        android:layout_width="297dp"
+        android:layout_height="78dp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/button"
+        android:padding="1dp"
+        android:text="Fechar"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:onClick="caixaFechar"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/conteinerComponentes"
+        app:layout_constraintEnd_toEndOf="@+id/conteinerComponentes"
+        app:layout_constraintStart_toStartOf="@+id/conteinerComponentes"
+        app:layout_constraintTop_toBottomOf="@+id/edit_nome" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="216dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="76dp"
+        android:text="FECHAR CAIXA"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.319"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="167dp"
+        android:layout_height="131dp"
+        app:srcCompat="@drawable/cle_orange"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

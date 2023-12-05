@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".FormCadastro">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="271dp"
+        android:layout_height="248dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/cr_company_removebg_preview" />
+
+    <TextView
+        android:id="@+id/title_cadastrese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_cadastro"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_marginTop="260dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/conteinerComponentes"
+        android:layout_width="322dp"
+        android:layout_height="238dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/conteiner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_cadastrese" />
+
+    <EditText
+        android:id="@+id/edit_nome"
+        style="@style/Edit_text"
+        android:layout_width="284dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="17dp"
+        android:ems="10"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="19dp"
+        android:drawableRight="@drawable/ic_usuario"
+        android:hint="Nome"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/conteinerComponentes"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/conteinerComponentes"
+        app:layout_constraintTop_toTopOf="@+id/conteinerComponentes" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        style="@style/Edit_text"
+        android:layout_width="284dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="17dp"
+        android:ems="10"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="19dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:drawableRight="@drawable/ic_email"
+        app:layout_constraintEnd_toEndOf="@+id/conteinerComponentes"
+        app:layout_constraintStart_toStartOf="@+id/conteinerComponentes"
+        app:layout_constraintTop_toTopOf="@+id/edit_nome" />
+
+    <EditText
+        android:id="@+id/edit_senha"
+        style="@style/Edit_text"
+        android:layout_width="284dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="17dp"
+        android:ems="10"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="19dp"
+        android:hint="Senha"
+        android:inputType="numberPassword"
+        android:drawableRight="@drawable/ic_eye"
+        app:layout_constraintEnd_toEndOf="@+id/conteinerComponentes"
+        app:layout_constraintStart_toStartOf="@+id/conteinerComponentes"
+        app:layout_constraintTop_toTopOf="@+id/edit_email" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonentrar"
+        android:layout_width="319dp"
+        android:layout_height="72dp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="53dp"
+        android:background="@drawable/button"
+        android:padding="1dp"
+        android:text="Cadastrar"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:onClick="trocandoCadasMenu"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/conteinerComponentes"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="@+id/conteinerComponentes"
+        app:layout_constraintTop_toBottomOf="@+id/edit_senha" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

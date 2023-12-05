@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".TelaPrincipal">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="136dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="107dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cardapio" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="162dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="87dp"
+        android:text="@string/title_menu"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttoncaixa"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonsair"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/button"
+        android:padding="1dp"
+        android:text="Sair"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:onClick="menuSair"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonfuncionario" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttoncaixa"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="41dp"
+        android:background="@drawable/button"
+        android:padding="1dp"
+        android:text="caixa"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:onClick="menuCaixa"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPDV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonPDV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="41dp"
+        android:background="@drawable/button"
+        android:padding="1dp"
+        android:text="estoque"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:onClick="menuEstoque"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonfuncionario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttoncaixa" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonfuncionario"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/button"
+        android:padding="1dp"
+        android:text="Funcionarios"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonsair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPDV" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
