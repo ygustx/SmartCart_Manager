@@ -16,7 +16,7 @@ public class FormAbrirCaixa extends AppCompatActivity {
 
     public void caixaProsseguir (View view){
 
-        Intent i = new Intent(getApplicationContext(), FormEstoque.class);
+        Intent i = new Intent(getApplicationContext(), FormPDV.class);
 
         startActivity(i);
     }
