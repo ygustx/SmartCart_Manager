@@ -20,6 +20,13 @@ public class FormEstoque extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void estoqueListar(View view){
+
+        Intent i = new Intent(getApplicationContext(), FormListaProdutos.class);
+
+        startActivity(i);
+    }
+
     public void estoqueSair (View view){
 
         Intent i = new Intent(getApplicationContext(), TelaPrincipal.class);

@@ -1,11 +1,11 @@
 <resources>
-    <string name="app_name">CERTO</string>
+    <string name="app_name">Smart Cart Manager</string>
 
     <string name="Entrar">Entrar</string>
 
     <string name="text_cadastro">Cadastre-se</string>
 
-    <string name="title_cadastro">Cadastra-se</string>
+    <string name="title_cadastro">Cadastre-se</string>
 
     <string name="title_menu">MENU</string>
 

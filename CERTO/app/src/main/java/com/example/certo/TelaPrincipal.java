@@ -28,6 +28,13 @@ public class TelaPrincipal extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void menuFuncionario (View view){
+
+        Intent i = new Intent(getApplicationContext(), FormFuncionario.class);
+
+        startActivity(i);
+    }
+
     public void menuSair (View view){
 
         Intent i = new Intent(getApplicationContext(), FormLogin.class);
